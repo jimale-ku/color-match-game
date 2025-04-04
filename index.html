@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Color Match Game by JimaleCraft - Test your color matching skills in this fun and challenging game">
+    <meta name="author" content="JimaleCraft">
+    <title>Color Match Game - JimaleCraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center">
+    <!-- Background Image Container -->
+    <div class="background-image"></div>
+    
+    <!-- Game Content -->
+    <div class="relative z-10 text-center">
+        <h1 class="text-4xl font-bold text-white mb-2">JimaleCraft</h1>
+        <h2 class="text-2xl font-semibold text-white mb-8">Color Match Game</h2>
+        
+        <div id="gameContainer" class="bg-gray-800/80 p-6 rounded-lg shadow-lg backdrop-blur-sm">
+            <div class="text-2xl font-bold text-white mb-6">
+                Match the color: <span id="colorName" class="text-blue-400">Red</span>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="color-option w-32 h-32 rounded-lg cursor-pointer hover:scale-105 transition-transform"></div>
+                <div class="color-option w-32 h-32 rounded-lg cursor-pointer hover:scale-105 transition-transform"></div>
+                <div class="color-option w-32 h-32 rounded-lg cursor-pointer hover:scale-105 transition-transform"></div>
+                <div class="color-option w-32 h-32 rounded-lg cursor-pointer hover:scale-105 transition-transform"></div>
+            </div>
+            
+            <div class="mt-6">
+                <p id="message" class="text-xl text-white"></p>
+                <p id="score" class="text-xl text-white mt-2">Score: 0</p>
+            </div>
+            
+            <button id="newColors" class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                New Colors
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer with Copyright -->
+    <footer class="mt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 JimaleCraft. All rights reserved.</p>
+        <p class="mt-1">Created with ❤️ by JimaleCraft</p>
+    </footer>
+    
+    <script src="./game.js"></script>
+</body>
+</html> 
